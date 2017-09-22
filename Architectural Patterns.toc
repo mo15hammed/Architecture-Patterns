@@ -1,20 +1,22 @@
-\contentsline {section}{\numberline {1}Model-View-Controller}{3}
-\contentsline {section}{\numberline {2}Presentation-Abstraction-Control}{4}
-\contentsline {section}{\numberline {3}Pipe And Filter}{5}
-\contentsline {section}{\numberline {4}Layered Systems}{6}
-\contentsline {section}{\numberline {5}Microkernal}{7}
-\contentsline {section}{\numberline {6}Client-Server}{8}
-\contentsline {section}{\numberline {7}N-Tier}{9}
-\contentsline {section}{\numberline {8}Repository}{11}
-\contentsline {section}{\numberline {9}Blackboard}{12}
-\contentsline {section}{\numberline {10}Finite State Machine}{13}
-\contentsline {section}{\numberline {11}Process Control}{14}
-\contentsline {section}{\numberline {12}Multi Agent System}{15}
-\contentsline {section}{\numberline {13}SOA}{16}
-\contentsline {section}{\numberline {14}Master-Slave}{17}
-\contentsline {section}{\numberline {15}Interpreter Pattern}{18}
-\contentsline {section}{\numberline {16}Message Bus}{19}
-\contentsline {section}{\numberline {17}Message Broker}{20}
-\contentsline {section}{\numberline {18}Peer-to-peer}{21}
-\contentsline {section}{\numberline {19}Call and Return}{22}
-\contentsline {section}{\numberline {20}Implicit Invocation}{23}
+\contentsline {section}{\numberline {1}Data Flow Software Architecture Patterns}{2}
+\contentsline {subsection}{\numberline {1.1}Model-View-Controller}{2}
+\contentsline {subsection}{\numberline {1.2}Presentation-Abstraction-Control}{2}
+\contentsline {subsection}{\numberline {1.3}Pipe And Filter}{3}
+\contentsline {subsection}{\numberline {1.4}Layered Systems}{5}
+\contentsline {subsection}{\numberline {1.5}Microkernal}{6}
+\contentsline {subsection}{\numberline {1.6}Client-Server}{7}
+\contentsline {subsection}{\numberline {1.7}N-Tier}{8}
+\contentsline {subsection}{\numberline {1.8}Repository}{10}
+\contentsline {subsection}{\numberline {1.9}Blackboard}{11}
+\contentsline {subsection}{\numberline {1.10}Finite State Machine}{12}
+\contentsline {subsection}{\numberline {1.11}Process Control}{13}
+\contentsline {subsection}{\numberline {1.12}Multi Agent System}{14}
+\contentsline {subsection}{\numberline {1.13}SOA}{15}
+\contentsline {subsection}{\numberline {1.14}Master-Slave}{16}
+\contentsline {subsection}{\numberline {1.15}Interpreter Pattern}{17}
+\contentsline {subsection}{\numberline {1.16}Message Bus}{18}
+\contentsline {subsection}{\numberline {1.17}Message Broker}{19}
+\contentsline {subsection}{\numberline {1.18}Peer-to-peer}{20}
+\contentsline {section}{\numberline {2}Control Flow Software Architecture Patterns}{21}
+\contentsline {subsection}{\numberline {2.1}Call and Return}{21}
+\contentsline {subsection}{\numberline {2.2}Implicit Invocation}{22}

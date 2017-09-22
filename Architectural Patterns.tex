@@ -12,7 +12,8 @@
 \tableofcontents
 \newpage
 
-\section{Model-View-Controller}
+\section{Data Flow Software Architecture Patterns}
+\subsection{Model-View-Controller}
 
 Model View Controller or MVC as it is popularly called, is a software design pattern for developing web applications. A Model View Controller pattern is made up of the following three parts:
 
@@ -35,7 +36,7 @@ Model View Controller or MVC as it is popularly called, is a software design pat
 
 
 
-\section{Presentation-Abstraction-Control}
+\subsection{Presentation-Abstraction-Control}
 
 This architecture is a further development of the Model-View-Controller architecture. The MVC is restricted to simple GUI's with one or more views on the same model. If the model consists of substructures that all require they own special way of interaction, a more complex GUI architecture is in order. The PAC architecture does not have the model as its core component, but a hierarchical structure of PAC components. Each PAC component consists of these items:
 
@@ -56,7 +57,7 @@ This architecture is a further development of the Model-View-Controller architec
 
 
 
-\section{Pipe And Filter}
+\subsection{Pipe And Filter}
 A very simple, yet powerful architecture, that is also very robust. It consists of any number of components (filters) that transform or filter data, before passing it on via connectors (pipes) to other components. The filters are all working at the same time. The architecture is often used as a simple sequence, but it may also be used for very complex structures.
 
 \noindent Components of this architecture are:
@@ -79,7 +80,7 @@ A very simple, yet powerful architecture, that is also very robust. It consists 
 
 \newpage
 
-\section{Layered Systems}
+\subsection{Layered Systems}
 Layered Systems use layers to separate different units of functionality. Each layer only communicates with the layer above and the layer below. Each layer uses the layer below to perform its function. Communication happens through predefined, fixed interfaces. A Layer is a design construct. It is implemented by any number of classes or modules that behave like they are all in the same layer. That means that they only communicate with classes in layers immediately above or below their layer and with themselves. Each layer offers its own kind of functionality. A higher layer uses its lower layer to perform its function. It requires its lower layer. It is possible to define multiple layers at the same level. The user calls a function on an object in the upper layer. This object calls functions in the layer below. These functions in turn approach the layer below and the layer above.
 
 \noindent There are five architectural patterns for layered systems that will be discussed later:
@@ -102,7 +103,7 @@ Layered Systems use layers to separate different units of functionality. Each la
 
 
 
-\section{Microkernal}
+\subsection{Microkernal}
 The microkernel architecture pattern consists of two types of architecture components: a core system and plug-in modules. Application logic is divided between independent plug-in modules and the basic core system, providing extensibility, flexibility, and isolation of application features and custom processing logic. Figure \ref{fig_mk} illustrates the basic microkernel architecture pattern.\\\\
 
 \begin{figure}[h]
@@ -116,7 +117,7 @@ The microkernel architecture pattern consists of two types of architecture compo
 \newpage
 
 
-\section{Client-Server}
+\subsection{Client-Server}
 A Client-Server Architecture consists of two types of components: clients and servers. A server component perpetually listens for requests from client components. When a request is received, the server processes the request, and then sends a response back to the client. Servers may be further classified as stateless or stateful. Clients of a stateful server may make composite requests that consist of multiple atomic requests. This enables a more conversational or transactional interactions between client and server. To accomplish this, a stateful server keeps a record of the requests from each current client. This record is called a session.\\\\
 
 \begin{figure}[h]
@@ -128,7 +129,7 @@ A Client-Server Architecture consists of two types of components: clients and se
 
 \newpage
 
-\section{N-Tier}
+\subsection{N-Tier}
 N-Tier architecture is a Client-Server architecture combined with the Layered architecture where N equals three or higher. Three-Tier architecture is an example of N-Tier architecture. It consists of:
 
 \begin{itemize}
@@ -166,7 +167,7 @@ N-Tier architecture is a Client-Server architecture combined with the Layered ar
 \label{fig_4t}
 \end{figure}
 
-\section{Repository}
+\subsection{Repository}
 The Repository Pattern is one of the most popular patterns to create an enterprise level application. It restricts us to work directly with the data in the application and creates new layers for database operations, business logic and the application UI. If an application does not follow the Repository Pattern, it may have the following problems:
 
 \begin{itemize}
@@ -195,7 +196,7 @@ The Repository Pattern is one of the most popular patterns to create an enterpri
 	
 
 
-\section{Blackboard}
+\subsection{Blackboard}
 The Blackboard pattern shows how a complex problem, such as image or speech recognition can be broken up into smaller, specialized subsystems that work together to solve a problem. It is useful for problems for which no deterministic solution strategies are known. In blackboard, several specialized subsystems assemble their knowledge to build a possibly partial or approximate solution.\\
 The blackboard pattern consists of three components:
 
@@ -232,7 +233,7 @@ The blackboard pattern consists of three components:
 	
 
 
-\section{Finite State Machine}
+\subsection{Finite State Machine}
 In general, a state machine is any device that stores the status of something at a given time and can operate on input to change the status and/or cause an action or output to take place for any given change. A computer is basically a state machine and each machine instruction is input that changes one or more states and may cause other actions to take place. Each computer's data register stores a state. The read-only memory from which a boot program is loaded stores a state (the boot program itself is an initial state). The operating system is itself a state and each application that runs begins with some initial state that may change as it begins to handle input. Thus, at any moment in time, a computer system can be seen as a very complex set of states and each program in it as a state machine. In practice, however, state machines are used to develop and describe specific device or program interactions.\\\\
 
 
@@ -251,7 +252,7 @@ In general, a state machine is any device that stores the status of something at
 \newpage
 
 
-\section{Process Control}
+\subsection{Process Control}
 Real time dynamic control systems are used to allow digital systems to interact with the physical world, for example: control systems for machines and engines. Such systems use sensors to receive information, perform computations, and control the machine or engine via actuators. Unlike applications based on iterative refinement, real time control systems are designed with the intention for the control process to continue indefinitely.\\
 
 \noindent For example, an engine control unit receives the accelerator's position and current RPM as inputs, and changes the amount of fuel injected into the cylinders so that the amount of torque produced by such engine corresponds to the accelerator's position.\\
@@ -269,7 +270,7 @@ Real time dynamic control systems are used to allow digital systems to interact 
 
 
 
-\section{Multi Agent System}
+\subsection{Multi Agent System}
 A multi-agent system (M.A.S.) is a computerized system composed of multiple interacting intelligent agents within an environment. Multi-agent systems can be used to solve problems that are difficult or impossible for an individual agent or a monolithic system to solve. Intelligence may include some methodic, functional, procedural approach, algorithmic search or reinforcement learning. Although there is considerable overlap, a multi-agent system is not always the same as an agent-based model (ABM). The goal of an ABM is to search for explanatory insight into the collective behavior of agents (which don't necessarily need to be "intelligent") obeying simple rules, typically in natural systems, rather than in solving specific practical or engineering problems. The terminology of ABM tends to be used more often in the sciences, and MAS in engineering and technology.\\\\
 
 
@@ -284,7 +285,7 @@ A multi-agent system (M.A.S.) is a computerized system composed of multiple inte
 \newpage	
 
 
-\section{SOA}
+\subsection{SOA}
 A service-oriented architecture (SOA) is a style services are provided to the other components by application components, through a communication protocol over a network. The basic principles of SOA are independent of vendors, products and technologies. A service is a discrete unit of functionality that can be accessed remotely and acted upon and updated independently, such as retrieving a credit card statement online.\\
 
 \noindent A service has four properties according to one of many definitions of SOA:
@@ -309,7 +310,7 @@ Different services can be used in conjunction to provide the functionality of a 
 	
 
 
-\section{Master-Slave}
+\subsection{Master-Slave}
 The Master-Slave pattern is used in real-time systems in which guaranteed interaction response times are required. It is another fundamental architecture developers use. It is used when you have two or more processes that need to run simultaneously and continuously but at different rates. If these processes run in a single loop, severe timing issues can occur. These timing issues occur when one part of the loop takes longer to execute than expected. If this happens, the remaining sections in the loop get delayed. The Master-Slave pattern consists of multiple parallel loops. Each of the loops may execute tasks at different rates. Of these parallel loops, one loop acts as the master and the others act as slaves. The master loop controls all of the slave loops, and communicates with them using messaging architectures. \\\\\\\\
 
 
@@ -322,7 +323,7 @@ The Master-Slave pattern is used in real-time systems in which guaranteed intera
 \newpage
 
 
-\section{Interpreter Pattern}
+\subsection{Interpreter Pattern}
 The Interpreter pattern is used for designing a component that interprets programs written in a dedicated language. The interpreted program can be replaced easily.\\\\
 \textbf{Example}
 \\Examples of the interpreter pattern are rule-based systems like expert systems, web scripting languages like JavaScript (client-side) or PHP (server-side), and Postscript.\\\\
@@ -335,7 +336,7 @@ On the other hand, the interpreter pattern enhances flexibility, because replaci
 
 
 
-\section{Message Bus}
+\subsection{Message Bus}
 A Message Bus is a combination of a common data model, a common command set, and a messaging infrastructure to allow different systems to communicate through a shared set of interfaces. This is analogous to a communications bus in a computer system, which serves as the focal point for communication between the CPU, main memory, and peripherals. Just as in the hardware analogy, there are a number of pieces that come together to form the message bus.\\\\\\
 
 
@@ -349,7 +350,7 @@ A Message Bus is a combination of a common data model, a common command set, and
 
 
 
-\section{Message Broker}
+\subsection{Message Broker}
 The Broker pattern is used to structure distributed systems with decoupled components, which interact by remote service invocations. Such systems are very inflexible when components have to know each others' location and other details (see Figure \ref{fig_mbr}). A broker component is responsible for the coordination of communication among components: it forwards requests and transmits results and exceptions. Servers publish their capabilities (services and characteristics) to a broker. Clients request a service from the broker, and the broker then redirects the client to a suitable service from its registry. Using the Broker pattern means that no other component than the broker needs to focus on low-level inter-process-communication.\\\\
 
 
@@ -363,7 +364,7 @@ The Broker pattern is used to structure distributed systems with decoupled compo
 
 
 
-\section{Peer-to-peer}
+\subsection{Peer-to-peer}
 The Peer-to-peer pattern can be seen as a symmetric Client-server pattern: peers may function both as a client, requesting services from other peers, and as a server, providing services to other peers. A peer may act as a client or as a server or as both, and it may change its role dynamically. Both clients and servers in the peer-to-peer pattern are typically multithreaded. The services may be implicit (for instance through the use of a connecting stream) instead of requested by invocation. Peers acting as a server may inform peers acting as a client of certain events. Multiple clients may have to be informed, for instance using an event-bus.\\\\
 
 
@@ -377,8 +378,8 @@ The Peer-to-peer pattern can be seen as a symmetric Client-server pattern: peers
 \newpage
 
 
-
-\section{Call and Return}
+\section{Control Flow Software Architecture Patterns}
+\subsection{Call and Return}
 A call and return architecture enables software designers to achieve a program structure, which can be easily modified. This style consists of the following two substyles: \\
 
 \begin{itemize}
@@ -399,7 +400,7 @@ A call and return architecture enables software designers to achieve a program s
 \newpage
 
 
-\section{Implicit Invocation}
+\subsection{Implicit Invocation}
 A major advantage of abstract data types over shared data is that changes in data representation and algorithms can be accomplished relatively easily. Changes in functionality, however, may be much harder to realize. This is because method invocations are explicit, hard-coded in the implementation. An alternative is to use the Implicit Invocation Style.\\\\\\\
 
 
